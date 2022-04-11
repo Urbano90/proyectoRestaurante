@@ -8,7 +8,7 @@ main{
     margin: 0 auto;
 }
 .logo {
-    height: 100px;
+    height: 80px;
 }
 .nav img {
     width: 100%;
@@ -265,4 +265,27 @@ footer {
 .tel {
     font-size: 20px;
     text-align: center;
+}
+.text-redes {
+    color: #898686;
+}
+.icon-twitter {
+    height: 60px;
+    border-radius: 20px;
+    margin: 10px auto 0 10px;
+}
+.icon-facebook {
+    height: 60px;
+    border-radius: 20px;
+    margin: 10px auto 0 10px;
+}
+.icon-instagram {
+    height: 60px;
+    border-radius: 20px;
+    margin: 10px auto 0 10px;
+}
+.icon-whatsapp {
+    height: 60px;
+    border-radius: 20px;
+    margin: 10px auto 0 10px;
 }
