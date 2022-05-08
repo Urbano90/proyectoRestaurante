@@ -29,23 +29,24 @@ hr {
     height: 5px;
 }
 ul {
-    width: 50%;
+    width: 30%;
     max-width: 100%;
-    min-width: 50%;
+    min-width: 20%;
   /*  margin: 0 500px; /* nos alinea la lista en el medio*/
     display: flex; /* nos alinea la lista en columna*/
     border-top: 3px solid #d81a91;/* le agrega una linea superior con un color gris*/
    /* justify-content: right;/*tira el navegador a la derecha*/
     margin-left: 100px;
+    padding: 0;
 }
 ul li {
-    width:20%; /* ingresa un espacio de 15% entre palabras*/
+    width:30%; /* ingresa un espacio de 20% entre palabras*/
     text-align: center; /* centra el texto*/
     padding: 1rem 0; /* agrega espacio interior*/
     display: inline-block; /* elimina las lineas que trae la lista*/
     color: #222;
     position: relative;
-    font-weight:800; /* grosor de las letras */
+    font-weight: 800; /* grosor de las letras */
     transition: all .22s;
     font-size: 15px;
 }
@@ -88,6 +89,7 @@ ul:hover li:hover {
 }
 label {
     font-size:17px;
+    font-weight: 600;   /* Gtrosor de las letras */
 }
 input {
     width: 300px;
@@ -114,6 +116,7 @@ footer {
     height: 300px;
     display: flex;
     justify-content: space-around;
+    
 }
 .footer-contact  {
     color: #898686;
@@ -179,14 +182,14 @@ footer {
  height: 100px;
 }
 .tel {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
 }
 .icon-tel {
     height: 80px;
 }
 .text-contacto-whatsapp {
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
 }
 .icon-whatsapp-contacto {
@@ -194,6 +197,7 @@ footer {
 }
 .text-redes {
     color: #898686;
+    font-size: 15px;
 }
 .icon-twitter {
     height: 60px;
@@ -215,16 +219,19 @@ footer {
     border-radius: 20px;
     margin: 10px auto 0 10px;
 }
+.copyright {
+    color: white;
+}
 @media (max-width:630px) {
    
     .footer-contact h2 {
         font-size: 23px;
    }
+   .text-redes {
+       font-size: 15px;
+   }
 }
 
 @media (max-width:390px) {
    
-    footer {
-        width: 390px;
-    } 
 }

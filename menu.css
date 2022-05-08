@@ -1,0 +1,33 @@
+
+ul {
+    width: 30%;
+    max-width: 100%;
+    min-width: 20%;
+  /*  margin: 0 500px; /* nos alinea la lista en el medio*/
+    display: flex; /* nos alinea la lista en columna*/
+    border-top: 3px solid #d81a91;/* le agrega una linea superior con un color gris*/
+   /* justify-content: right;/*tira el navegador a la derecha*/
+    margin-left: 100px;
+    padding: 0;
+}
+ul li {
+    width:30%; /* ingresa un espacio de 20% entre palabras*/
+    text-align: center; /* centra el texto*/
+    padding: 1rem 0; /* agrega espacio interior*/
+    display: inline-block; /* elimina las lineas que trae la lista*/
+    color: #222;
+    position: relative;
+    font-weight: 800; /* grosor de las letras */
+    transition: all .22s;
+    font-size: 15px;
+}
+.title-platos {
+    text-align: center;
+}
+ul.platos {
+    width: 70%;
+}
+.platos-menu {
+    display: grid;
+    justify-content: center;
+}
