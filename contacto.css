@@ -82,126 +82,28 @@ ul:hover li:hover {
     color: #222;
 }
 
-.hero {
+.form-contacto {
     display: grid;
-    grid-template-columns: 2fr 3fr;  /* 1fr 1fr es para dos columnas cuamdo son iguales*/
-    grid-template-rows: 400px;
+    justify-content: center;
 }
-.fotoRestaurante {
-    width:100%;
-    height: 100%;
-    object-fit: contain;    /*hace que la imagen se ajuste a lo que está ocupaando*/
-
+label {
+    font-size:17px;
 }
-.info {
-    align-self: center;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.info-title {
-    color: #333;
-    font-size: 1.8rem;
-    font-weight: bolder;
-    margin-bottom: 20px;
-}
-.info-subtitle {
-    color: #333;
-    font-size: 1.4rem;
-    margin-bottom: 24px;
-
-}
-.info-button {
-    border: none;  /* para que no tenga borde*/
-    border-radius: 20px;
-    color: #333;
-    background-color: #fb8c00;
-    font-weight: bolder;
-    padding: 12px 24px;
-    
-}
-.text-button {
-    text-decoration: none;
-}
-
-.dishes-subtitle {
-    font-size: 14px;
-    padding: 0;
-}
-.dishes-grid {
-   display: grid;  /* para determinar que es una grilla*/
-   grid-template-columns: repeat(auto-fit, minmax(150px, 300px));  /* para que columna sea desplegable. que sea de una fraccion*/
-   grid-auto-rows: 1fr;  /* determina las filas*/
-   gap: 10px;  /* gap aqui le da el espacio entre las imagenes*/
-   justify-content: center ;  /* sirve para centrar la grilla*/
-
-}
-.dishes-title {
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 50px;
-    font-size: 1.8rem;
-    margin: 0;
-}
-
-.dishes-item {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 30px;
-    
-}
-.dishes-item__big {
-    grid-area: 1 / 1 / 3 / 3;   /* mueve la imagen grande */
-    height: 400px;  /* tamaño de la img grande*/
-}
-.dishes {
-    margin: 10px 0;
-}
-.drink {
-    margin-bottom: 200px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin: 0 auto;
-}
-.drink-title {
-    font-size: 1.4rem;
-    color: #333;
-    font-weight: bolder;
-    margin-bottom: 50px;
-    margin: 0;
-}
-.drink-subtitle {
-    font-size: 17px;
-    margin: 0;
-}
-.drink-grid {
-    display: grid;
-    gap: 20px;
-    justify-content: center;    /* para que esté centrado orizontalmente en su espacio*/
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));   /*nos indica el numero de elementos o celdas y el tamaño max y min*/
-    
-}
-
-.drink-grid-item img {
+input {
     width: 300px;
-    height: 100px;
-    object-fit: contain;   /* es para que se vea toda la imagen*/
+    height: 20px;
+    font-size:17px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
-.drink-grid-item h2 {
-    text-align: center;
-    font-size: 16px;
-}
-.drink-description {
-    font-size: 14px;
-    text-align: center;
-
-}
-.our-restaurant {
-    font-size: 14px;
-    background-color: #e7aa69c9;
-}
-.our-restaurant h2{
-    margin: 0;
+.input-enviar {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background-color: rgb(27, 194, 27);
+    cursor: pointer;
 }
 .iconos-redes img {
     height: 60px;
@@ -253,7 +155,18 @@ footer {
     color:  #fe5b0f;
 
 }
-
+.contacto-localizacion {
+    font-size: 18px;
+    text-align: center;
+}
+.contacto-correo {
+    font-size: 18px;
+    text-align: center;
+}
+.correo {
+    font-size: 18px;
+    text-align: center;
+}
 .contaacto-redes-sociales {
     font-size: 30px;
     text-align: center;
@@ -303,20 +216,15 @@ footer {
     margin: 10px auto 0 10px;
 }
 @media (max-width:630px) {
-    .dishes-grid {
-        display: grid;
-        justify-content: center;    /* para que esté centrado orizontalmente en su espacio*/
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    .drink-grid-item img {
-        height: 100px;
-        width: 100px;
-    }
-    .name-restaurante {
-        font-size: 20px;
-    }
+   
     .footer-contact h2 {
         font-size: 23px;
    }
-    
+}
+
+@media (max-width:390px) {
+   
+    footer {
+        width: 390px;
+    } 
 }
