@@ -1,16 +1,56 @@
 
+html{
+    font-size: 62.5%;   /* lo pongo para poder usar los Rem */
+    font-family: 'Roboto', sans-serif;  /*tipo de letra*/
+}
+main{
+    max-width: 1370px;  /* define el ancho maximo que vamos a poder alcanzar en el main*/
+    min-width: 300px;
+    margin: 0 auto;
+}
+.nav {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    display: flex;
+    justify-content: end;/*tira el navegador a la derecha*/
+    height: 80px;
+    width: 300px;
+
+}
+
+hr {
+   background-color: #fe5b0f;
+    height: 5px;
+}
 ul {
-    width: 30%;
+    width: 50%;
     max-width: 100%;
-    min-width: 20%;
+    min-width: 5%;
   /*  margin: 0 500px; /* nos alinea la lista en el medio*/
     display: flex; /* nos alinea la lista en columna*/
     border-top: 3px solid #d81a91;/* le agrega una linea superior con un color gris*/
    /* justify-content: right;/*tira el navegador a la derecha*/
-    margin-left: 100px;
-    padding: 0;
+    margin-left: 20px;
+
 }
-ul li {
+ul {
+    width: 50%;
+    max-width: 100%;
+    min-width: 5%;
+  /*  margin: 0 500px; /* nos alinea la lista en el medio*/
+    display: flex; /* nos alinea la lista en columna*/
+    border-top: 3px solid #d81a91;/* le agrega una linea superior con un color gris*/
+   /* justify-content: right;/*tira el navegador a la derecha*/
+    margin-left: 20px;
+
+}
+.navbar li {
     width:30%; /* ingresa un espacio de 20% entre palabras*/
     text-align: center; /* centra el texto*/
     padding: 1rem 0; /* agrega espacio interior*/
@@ -21,6 +61,43 @@ ul li {
     transition: all .22s;
     font-size: 15px;
 }
+.navbar li a {
+    text-decoration: none;
+    color: #222;
+}
+.navbar li:after {
+    width: 100%;
+    height: 2px;
+    background: #d81a91;
+    bottom: -1px;
+    left: 0;
+    content: ''; /* hace aparecer la linea rosa*/
+    display: block;
+    position: absolute; /* baja la linea rosa*/
+    opacity: 0; /* nos oculta la linea rosa*/
+}
+.navbar li.active {
+    color: #222;
+}
+.navbar li.active:after {
+    opacity: 1;
+
+}
+.navbar li:hover {
+    background: #fb8c00; /* color de fondo en el segundo plano*/
+    color: #222;  /* color de las letras en el segundo plano*/
+}
+.navbar:hover li{
+    color: #222;
+}
+.navbar:hover li:hover {
+    color: #222;
+}
+.menu {
+         display: none;  /* hacemos desaparecer el ico no del menu en el desktop */
+         height: 30px;
+         padding-top: 10px;
+     }
 .title-platos {
     text-align: center;
 }
@@ -30,4 +107,130 @@ ul.platos {
 .platos-menu {
     display: grid;
     justify-content: center;
+}
+footer {
+    background-color: #222;
+   width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-contact  {
+    color: #898686;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 50px;
+}
+.footer-contact h2{
+    color: #fe5b0f;
+    font-size: 30px;
+}
+.footer-contact a {
+    text-decoration: none;
+    color: #898686;
+    font-size: 15px;
+}
+.footer-contact a:hover {
+    color:  #fe5b0f;
+
+}
+
+.footer-direction  {
+
+    font-size:15px;
+    text-align: center;
+    margin-top: 40px;
+}
+.footer-about {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 62px;
+}
+.footer-about a {
+    text-decoration: none;
+    color: #898686;
+    font-size: 20px;
+}
+.footer-about a:hover {
+    color:  #fe5b0f;
+
+}
+
+.contacto-redes-sociales {
+    font-size: 30px;
+    text-align: center;
+}
+.contacto-iconos-redes {
+    font-size: 30px;
+    text-align: center;
+}
+.contacto-iconos-redes img{
+ height: 100px;
+}
+.tel {
+    font-size: 20px;
+    text-align: center;
+}
+.icon-tel {
+    height: 80px;
+}
+.text-contacto-whatsapp {
+    font-size: 20px;
+    text-align: center;
+}
+.icon-whatsapp-contacto {
+    height: 100px;
+}
+.text-redes {
+    color: #898686;
+}
+.icon-twitter {
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px auto 0 10px;
+}
+.icon-facebook {
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px auto 0 10px;
+}
+.icon-instagram {
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px auto 0 10px;
+
+}
+.icon-whatsapp {
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px auto 0 10px;
+}
+
+@media (max-width:630px) {
+  .menu {
+           display: block;  /* hascemos perecer el icono del menu en los dispositivos pequeños*/
+       }
+       .navbar {
+           margin-left: 5px;
+           width: 10%;
+       }
+       .navbar li {
+         display: none;  /* Hacemos desaparecer el navbar */
+       }
+
+    .name-restaurante {
+        font-size: 20px;
+    }
+    .footer-contact h2 {
+        font-size: 23px;
+   }
+
+}
+@media (max-width:400px){
+  .nav {
+      width: 80%;
+  }
+  .img-logo {
+    margin-left: 30px;
+  }
 }
